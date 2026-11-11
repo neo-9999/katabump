@@ -9,7 +9,9 @@ on:
 jobs:
   renew:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write  # 必须添加这一行，允许工作流修改仓库    
+      
     steps:
     - uses: actions/checkout@v4
     
@@ -45,3 +47,6 @@ jobs:
       with:
         name: screenshots
         path: screenshots/
+        
+    - name: Keepalive Workflow
+      uses: gautamkrishnar/keepalive-workflow@v2
