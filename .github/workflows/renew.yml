@@ -13,6 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
+    - name: Setup Cloudflare WARP
+      uses: fscarmen/warp-on-actions@v1.2    
+      
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
