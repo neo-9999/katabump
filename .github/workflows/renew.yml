@@ -47,5 +47,5 @@ jobs:
         name: screenshots
         path: screenshots/
         
-    - name: Keepalive Workflow
-      uses: gautamkrishnar/keepalive-workflow@v2
+    #- name: Keepalive Workflow
+    #  uses: gautamkrishnar/keepalive-workflow@v2
